@@ -1,7 +1,7 @@
 #include "DHT.h"
 
 #define DHTPIN D13 
-#define LED D13
+#define LED D14
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHT11);
 float old_temperature;
@@ -9,6 +9,7 @@ void setup(){
     pinMode(LED, OUTPUT);
     Serial.begin(9600);
     dht.begin();
+    float old_temperature = dht.readTemperature();
 }
 
 void loop(){
