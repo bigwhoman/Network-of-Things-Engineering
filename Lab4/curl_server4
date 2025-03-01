@@ -1,0 +1,1 @@
+ curl -H "Content-Type: application/json" -XPUT "http://$SERVER_IP:32200/notelab/temperature_topic/1" -d '{"id":"tester", "temperature":10}'

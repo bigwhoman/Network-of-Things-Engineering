@@ -1,0 +1,29 @@
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 1,
+      "relation" : "eq"
+    },
+    "max_score" : 1.0296195,
+    "hits" : [
+      {
+        "_index" : "notelab",
+        "_type" : "temperature_topic",
+        "_id" : "3",
+        "_score" : 1.0296195,
+        "_source" : {
+          "id" : "rooster",
+          "temperature" : 65
+        }
+      }
+    ]
+  }
+}

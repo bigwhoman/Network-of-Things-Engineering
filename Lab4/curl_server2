@@ -1,0 +1,5 @@
+curl -H "Content-Type: application/json" -XPOST "http://$SERVER_IP:32200/notelab/temperature_topic/1" -d '{"id":"tester", "temperature":22}'
+sleep 1
+curl -H "Content-Type: application/json" -XPOST "http://$SERVER_IP:32200/notelab/temperature_topic/2" -d '{"id":"toaser", "temperature":55}'
+sleep 1
+curl -H "Content-Type: application/json" -XPOST "http://$SERVER_IP:32200/notelab/temperature_topic/3" -d '{"id":"rooster", "temperature":65}'
